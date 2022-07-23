@@ -10,7 +10,7 @@ const Navbar = () => {
     const [isDark, setIsDark] = useState(false)
     return (
         <div>
-            <nav className='w-full top-0 fixed z-20 border-b shadow-md sha border-gray-200 text-black' style={{ backdropFilter: 'blur(15px) saturate(100%)' }}>
+            <nav className='w-full top-0 fixed z-999 border-b shadow-md sha border-gray-200 text-black' style={{ backdropFilter: 'blur(15px) saturate(100%)' }}>
                 <div className="w-full ">
                     <div className="flex items-center h-20 w-full">
                         <div className="flex items-center justify-between w-full sm:mx-10 md:mx20">
