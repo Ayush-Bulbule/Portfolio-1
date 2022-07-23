@@ -10,8 +10,8 @@ const Navbar = () => {
     const [isDark, setIsDark] = useState(false)
     return (
         <div>
-            <nav className='fixed z-20 bg-white w-full border border-b-gray-300'>
-                <div className="w-full">
+            <nav className='w-full top-0 fixed z-20 border-b shadow-md sha border-gray-200 text-black' style={{ backdropFilter: 'blur(15px) saturate(100%)' }}>
+                <div className="w-full ">
                     <div className="flex items-center h-20 w-full">
                         <div className="flex items-center justify-between w-full sm:mx-10 md:mx20">
                             {/* Brand Logo Section */}
@@ -24,33 +24,33 @@ const Navbar = () => {
                                 {/* style={{ fontFamily: "'Maven Pro', sans-serif" }} */}
                                 <div className="ml-10 space-x-4 flex items-baseline font-semibold" >
                                     <Link
-                                        href='/home'
-                                        action='home'
-                                        to='home' smooth={true}
+                                        href='/about'
+                                        action='about'
+                                        to='about' smooth={true}
                                         offset={50} duration={500}
-                                        className='text-md text-gray-500 hover:text-blue-500 px-3 py-2 cursor-pointer'>Home</Link>
+                                        className='text-md hover:text-blue-500 px-3 py-2 cursor-pointer'>About</Link>
                                     <Link
-                                        href="/services"
-                                        activeClass="services"
-                                        to="services"
+                                        href="/skills"
+                                        activeClass="skills"
+                                        to="skills"
                                         smooth={true}
                                         offset={50}
                                         duration={500}
-                                        className='text-md text-gray-500 hover:text-blue-500 px-3 py-2 cursor-pointer'>Services</Link>
+                                        className='text-md hover:text-blue-500 px-3 py-2 cursor-pointer'>Skills</Link>
                                     <Link
 
                                         action='Projects'
                                         to='projects'
                                         smooth={true}
                                         offset={50}
-                                        duration={500} className='text-md text-gray-500 hover:text-blue-500 px-3 py-2 cursor-pointer'>Projects</Link>
+                                        duration={500} className='text-md hover:text-blue-500 px-3 py-2 cursor-pointer'>Projects</Link>
                                     <Link
                                         href="/contact"
                                         activeClass="contact"
                                         to="contact"
                                         smooth={true}
                                         offset={50}
-                                        duration={500} className='text-md text-gray-500 hover:text-blue-500 px-3 py-2 cursor-pointer'>Contact</Link>
+                                        duration={500} className='text-md hover:text-blue-500 px-3 py-2 cursor-pointer'>Contact</Link>
                                 </div>
 
                             </div>
@@ -101,26 +101,26 @@ const Navbar = () => {
                                 >
 
                                     <Link
-                                        href="/home"
-                                        activeClass="home"
-                                        to="home"
+                                        href="/about"
+                                        activeClass="about"
+                                        to="about"
                                         smooth={true}
                                         offset={50}
                                         duration={500}
                                         className="cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                                     >
-                                        Home
+                                        About
                                     </Link>
                                     <Link
-                                        href="/services"
-                                        activeClass="services"
-                                        to="services"
+                                        href="/skills"
+                                        activeClass="skills"
+                                        to="skills"
                                         smooth={true}
                                         offset={50}
                                         duration={500}
                                         className="cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                                     >
-                                        Services
+                                        Skills
                                     </Link>
 
                                     <Link

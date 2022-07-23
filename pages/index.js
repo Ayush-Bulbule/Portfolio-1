@@ -1,10 +1,15 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import Footer from '../components/Footer'
 
 
 import Navbar from '../components/Navbar'
 import styles from '../styles/Home.module.css'
+import About from './About'
+import Contact from './Contact'
 import Hero from './Hero'
+import Skills from './Skills'
+import Works from './Work'
 
 export default function Home() {
   return (
@@ -21,6 +26,16 @@ export default function Home() {
 
       {/* Hero Section */}
       <Hero />
+      {/* About Section */}
+      <About />
+      {/* Skills Section */}
+      <Skills />
+      {/* Works Section */}
+      <Works />
+      {/* Contact */}
+      <Contact />
+      {/* footer */}
+      <Footer />
     </div>
   )
 }
