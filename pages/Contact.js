@@ -10,16 +10,16 @@ const Contact = () => {
     return (
         <div>
             {/* <Navbar /> */}
-            <Element name='works' id='works' className="my-8 flex items-center md:px-12 lg:px-16 xl:px-32 py-16 pt-8 md:mx-40 mx-8 justify-center flex-col">
+            <Element name='contact' id='contact' className="my-8 flex items-center md:px-12 lg:px-16 xl:px-32 py-16 pt-8 md:mx-40 mx-8 justify-center flex-col">
                 <p className="text-sm text-gray-400 uppercase text-center">Contact</p>
                 <h2 className="text-4xl text-blue-600 font-bold text-center mt-5">Contact Me</h2>
                 <div
-                    className="max-w-screen-xl mt-24 px-8 grid gap-8 grid-cols-1 md:grid-cols-2  text-gray-900">
+                    className="max-w-screen-xl mt-24 md:px-8 grid gap-8 grid-cols-1 md:grid-cols-2  text-gray-900">
                     <div className="flex flex-col justify-between">
                         <div>
                             <h2 className="text-4xl lg:text-5xl font-bold leading-tight">Lets talk about everything!</h2>
                             <div className="text-gray-700 mt-8">
-                                Hate forms? Contact on <span className="underline">whatsapp</span> instead.
+                                Hate forms? Contact on <Link href='https://www.wa.me/918459320663' ><span className="underline font-bold cursor-pointer text-green-900"> whatsapp</span></Link> instead.
                             </div>
                         </div>
                         <div className="mt-8 text-center">
@@ -29,22 +29,22 @@ const Contact = () => {
                     <div className="">
                         <div>
                             <span className="uppercase text-sm text-gray-600 font-bold">Full Name</span>
-                            <input className="w-full bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
+                            <input className="w-full bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:ring ring-sky-300 ring-offset-0"
                                 type="text" placeholder="" />
                         </div>
                         <div className="mt-8">
                             <span className="uppercase text-sm text-gray-600 font-bold">Email</span>
-                            <input className="w-full bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
+                            <input className="w-full bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:ring ring-sky-300 ring-offset-0"
                                 type="text" />
                         </div>
                         <div className="mt-8">
                             <span className="uppercase text-sm text-gray-600 font-bold">Message</span>
                             <textarea
-                                className="w-full h-32 bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"></textarea>
+                                className="w-full h-32 bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:ring ring-sky-300 ring-offset-0"></textarea>
                         </div>
                         <div className="mt-8">
                             <button
-                                className="uppercase text-sm font-bold tracking-wide bg-blue-500 text-gray-100 p-3 rounded-lg w-full focus:outline-none focus:shadow-outline">
+                                className="uppercase text-sm font-bold tracking-wide bg-blue-500 text-gray-100 p-3 rounded-lg w-full focus:outline-none focus:ring ring-sky-300 ring-offset-0">
                                 Send Message
                             </button>
                         </div>

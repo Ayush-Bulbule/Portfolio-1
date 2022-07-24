@@ -21,7 +21,7 @@ const About = () => {
                         <p className="mt-2 text-md text-justify">You can connect me on socials, I would love to hear from you!</p>
                         <div className="flex items-center my-3 gap-10">
                             <Link
-                                href='instagram.com/ayush_2413'
+                                href='https://instagram.com/ayush_2413'
                                 className='cursor-pointer'>
                                 <FaInstagram className='text-2xl text-black-700 cursor-pointer hover:text-pink-600 opacity-70 ' />
                             </Link>
@@ -31,12 +31,12 @@ const About = () => {
                                 <FaTwitter className='text-2xl text-black-700 cursor-pointer hover:text-sky-500 opacity-70 ' />
                             </Link>
                             <Link
-                                href='instagram.com/ayush_2413'
+                                href='https://in.linkedin.com/in/ayush-bulbule-2a02381b2'
                                 className='cursor-pointer'>
                                 <FaLinkedin className='text-2xl text-black-700 cursor-pointer hover:text-blue-800 opacity-70 ' />
                             </Link>
                             <Link
-                                href='instagram.com/ayush_2413'
+                                href='https://wa.me/918459320663'
                                 className='cursor-pointer'>
                                 <FaWhatsapp className='text-2xl text-black-700 cursor-pointer hover:text-green-700 opacity-70 ' />
                             </Link>

@@ -1,4 +1,5 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
+import { useTheme } from 'next-themes'
 import { Transition, transition } from '@headlessui/react'
 import { Link } from 'react-scroll'
 import { FaBars, FaTimes } from 'react-icons/fa'
@@ -7,12 +8,52 @@ import { FaRegMoon } from 'react-icons/fa'
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false)
-    const [isDark, setIsDark] = useState(false)
+    const [mounted, setMounted] = useState(false)
+
+
+    const { systemTheme, theme, setTheme } = useTheme();
+
+    useEffect(() => {
+        setMounted(true);
+        // console.log("hello");
+        setTheme('light');
+    }, []);
+
+    const renderThemeChanger = () => {
+        if (!mounted) return null;
+
+        const currentTheme = 'light'
+        console.log("jiii");
+        if (currentTheme === 'dark') {
+            return (
+                <div onClick={() => setTheme('light')} className="flex justify-center items-center pr-8 flex-shrink-0 invisible md:visible cursor-pointer">
+                    <ImSun className='font-semibold text-2xl mr-1 text-white' />
+                    <h3 className="text-lg font-semibold dark:text-white">
+                        Lightmode
+                    </h3>
+                </div>
+            )
+        } else {
+            return (
+                <div onClick={() => {
+                    console.log(currentTheme)
+                    setTheme('dark')
+                }} className="flex justify-center items-center pr-8 flex-shrink-0 invisible md:visible cursor-pointer">
+                    <FaRegMoon className='font-semibold text-2xl mr-1' />
+                    <h3 className="text-lg font-semibold">
+                        DarkMode
+                    </h3>
+                </div>
+
+            )
+        }
+
+    }
     return (
         <div>
-            <nav className='w-full top-0 fixed z-999 border-b shadow-md sha border-gray-200 text-black' style={{ backdropFilter: 'blur(15px) saturate(100%)' }}>
+            <nav className='w-full top-0 fixed z-50 border-b shadow-md sha border-gray-200 text-black' style={{ backdropFilter: 'blur(15px) saturate(100%)' }}>
                 <div className="w-full ">
-                    <div className="flex items-center h-20 w-full">
+                    <div className="flex items-center h-16 md:h-20 w-full">
                         <div className="flex items-center justify-between w-full sm:mx-10 md:mx20">
                             {/* Brand Logo Section */}
                             <div className="flex items-center justify-center flex-shrink-0 sm:ml-4">
@@ -38,9 +79,9 @@ const Navbar = () => {
                                         duration={500}
                                         className='text-md hover:text-blue-500 px-3 py-2 cursor-pointer'>Skills</Link>
                                     <Link
-
-                                        action='Projects'
-                                        to='projects'
+                                        href='/works'
+                                        action='works'
+                                        to='works'
                                         smooth={true}
                                         offset={50}
                                         duration={500} className='text-md hover:text-blue-500 px-3 py-2 cursor-pointer'>Projects</Link>
@@ -55,13 +96,7 @@ const Navbar = () => {
 
                             </div>
                             {/* Section for direct contact via email */}
-                            <div className="flex justify-center items-center pr-8 flex-shrink-0 invisible md:visible cursor-pointer">
-                                {isDark ? <ImSun className='font-semibold text-2xl mr-1 text-white' /> : <FaRegMoon className='font-semibold text-2xl mr-1' />}
-                                <h3 className="text-lg font-semibold">
-                                    Colormode
-                                </h3>
-                                {/* <a href='https://wa.me/918459320663?text=hi' className="text-xl font-bold cursor-pointer ">Say <span className='text-blue-600'>hi</span></a> */}
-                            </div>
+                            {renderThemeChanger()}
                         </div>
 
                         {/* Desktop Part Completed */}
@@ -124,9 +159,9 @@ const Navbar = () => {
                                     </Link>
 
                                     <Link
-                                        href="/work"
-                                        activeClass="projects"
-                                        to="projects"
+                                        href="/works"
+                                        activeClass="works"
+                                        to="works"
                                         smooth={true}
                                         offset={50}
                                         duration={500}
@@ -134,18 +169,6 @@ const Navbar = () => {
                                     >
                                         Projects
                                     </Link>
-                                    <Link
-                                        href="/techs"
-                                        activeClass="techs"
-                                        to="techs"
-                                        smooth={true}
-                                        offset={50}
-                                        duration={500}
-                                        className="cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-                                    >
-                                        Techcs
-                                    </Link>
-
                                     <Link
                                         href="/contact"
                                         activeClass="contact"
@@ -157,7 +180,6 @@ const Navbar = () => {
                                     >
                                         Contact
                                     </Link>
-
                                     <a
                                         href='https://wa.me/918459320663?text=hi'
                                         smooth={true}
