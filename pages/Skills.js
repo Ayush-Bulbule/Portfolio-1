@@ -15,7 +15,7 @@ const Skills = () => {
                     <div className="flex items-center justify-items-center md:mx-40 flex-col md:flex-row mx-12 p-2">
                         {/* Block 1 */}
                         <div className="flex flex-col items-center justify-items-center mt-4 md:border-r-2 border-black-300">
-                            <h3 className="text-md text-gray-800 font-semibold">Web Dev</h3>
+                            <h3 className="text-md text-gray-800 dark:text-gray-200 font-semibold">Web Dev</h3>
                             <div className="flex items-center justify-center px-8 pt-4">
                                 <FaHtml5 className='text-orange-400 text-4xl mx-4' />
                                 <FaCss3 className='text-blue-600  text-4xl mx-4' />
@@ -29,7 +29,7 @@ const Skills = () => {
                         </div>
                         {/* Block 2 */}
                         <div className="flex flex-col items-center justify-items-center mt-4 md:border-r-2 border-black-300">
-                            <h3 className="text-md text-gray-800 font-semibold">Frontend Framework</h3>
+                            <h3 className="text-md text-gray-800 dark:text-gray-200 font-semibold">Frontend Framework</h3>
                             <div className="flex items-center justify-center px-8 pt-4">
                                 <FaReact className='text-blue-400 text-4xl mx-4' />
                                 <SiNextdotjs className='text-black text-opacity-40 text-4xl mx-4' />
@@ -41,7 +41,7 @@ const Skills = () => {
                         </div>
                         {/* Block 3 */}
                         <div className="flex flex-col items-center justify-items-center mt-4 md:border-r-2 border-black-30">
-                            <h3 className="text-md text-gray-800 font-semibold">Backend</h3>
+                            <h3 className="text-md text-gray-800 dark:text-gray-200 font-semibold">Backend</h3>
                             <div className="flex items-center justify-center px-8 pt-4">
                                 <SiCodeigniter className='text-orange-400 text-4xl mx-4' />
                                 <FaNodeJs className='text-green-400 text-4xl mx-4' />
@@ -56,7 +56,7 @@ const Skills = () => {
                     <div className="flex items-center justify-items-center md:mx-40 flex-col md:flex-row mx-12 p-2">
                         {/* Block 1 */}
                         <div className="flex flex-col items-center justify-items-center mt-4 md:border-r-2 border-black-30">
-                            <h3 className="text-md text-gray-800 font-semibold">Database</h3>
+                            <h3 className="text-md text-gray-800  dark:text-gray-200 font-semibold">Database</h3>
                             <div className="flex items-center justify-center px-8 pt-4">
                                 <SiMysql className='text-blue-800 text-opacity-50 text-4xl mx-4' />
                                 <SiFirebase className='text-yellow-400 text-4xl mx-4' />
@@ -68,7 +68,7 @@ const Skills = () => {
                         </div>
                         {/* Block 2 */}
                         <div className="flex flex-col items-center justify-items-center mt-4 md:border-r-2 border-black-30">
-                            <h3 className="text-md text-gray-800 font-semibold">App Development</h3>
+                            <h3 className="text-md text-gray-800  dark:text-gray-200 font-semibold">App Development</h3>
                             <div className="flex items-center justify-center px-8 pt-4">
                                 <FaReact className='text-cyan-400 p-1 rouded-sm bg-slate-700 text-4xl mx-4' />
                                 <FaAndroid className='text-green-400 text-4xl mx-4' />

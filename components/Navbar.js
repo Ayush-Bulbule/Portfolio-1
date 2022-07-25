@@ -6,58 +6,22 @@ import { FaBars, FaTimes } from 'react-icons/fa'
 import { ImSun } from 'react-icons/im'
 import { FaRegMoon } from 'react-icons/fa'
 
+
 const Navbar = () => {
-    const [isOpen, setIsOpen] = useState(false)
-    const [mounted, setMounted] = useState(false)
+    const [isOpen, setIsOpen] = useState(false);
 
+    // Theme
+    const { theme, setTheme } = useTheme()
 
-    const { systemTheme, theme, setTheme } = useTheme();
-
-    useEffect(() => {
-        setMounted(true);
-        // console.log("hello");
-        setTheme('light');
-    }, []);
-
-    const renderThemeChanger = () => {
-        if (!mounted) return null;
-
-        const currentTheme = 'light'
-        console.log("jiii");
-        if (currentTheme === 'dark') {
-            return (
-                <div onClick={() => setTheme('light')} className="flex justify-center items-center pr-8 flex-shrink-0 invisible md:visible cursor-pointer">
-                    <ImSun className='font-semibold text-2xl mr-1 text-white' />
-                    <h3 className="text-lg font-semibold dark:text-white">
-                        Lightmode
-                    </h3>
-                </div>
-            )
-        } else {
-            return (
-                <div onClick={() => {
-                    console.log(currentTheme)
-                    setTheme('dark')
-                }} className="flex justify-center items-center pr-8 flex-shrink-0 invisible md:visible cursor-pointer">
-                    <FaRegMoon className='font-semibold text-2xl mr-1' />
-                    <h3 className="text-lg font-semibold">
-                        DarkMode
-                    </h3>
-                </div>
-
-            )
-        }
-
-    }
     return (
         <div>
-            <nav className='w-full top-0 fixed z-50 border-b shadow-md sha border-gray-200 text-black' style={{ backdropFilter: 'blur(15px) saturate(100%)' }}>
+            <nav className='w-full top-0  fixed z-50 border-b shadow-md sha border-gray-200 dark:border-gray-700 text-black dark:text-white' style={{ backdropFilter: 'blur(15px) saturate(100%)' }}>
                 <div className="w-full ">
                     <div className="flex items-center h-16 md:h-20 w-full">
                         <div className="flex items-center justify-between w-full sm:mx-10 md:mx20">
                             {/* Brand Logo Section */}
                             <div className="flex items-center justify-center flex-shrink-0 sm:ml-4">
-                                <h1 className='text-xl font-bold ml-8'>Ayush <span className="text-blue-600">Bulbule</span> </h1>
+                                <h1 className='text-xl font-bold ml-8'>Ayush <span className="text-blue-600 dark:text-cyan-500">Bulbule</span> </h1>
                             </div>
 
                             {/* Links Section */}
@@ -96,7 +60,13 @@ const Navbar = () => {
 
                             </div>
                             {/* Section for direct contact via email */}
-                            {renderThemeChanger()}
+                            {/* {renderThemeChanger()} */}
+                            <div onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')} className="flex justify-center items-center pr-8 flex-shrink-0 invisible md:visible cursor-pointer">
+                                {theme === 'dark' ? <ImSun className='font-semibold text-2xl mr-1' /> : <FaRegMoon className='font-semibold text-2xl mr-1' />}
+                                <h3 className="text-lg font-semibold">
+                                    {theme === 'dark' ? 'Lightmode' : 'DarkMode'}
+                                </h3>
+                            </div>
                         </div>
 
                         {/* Desktop Part Completed */}
@@ -118,7 +88,7 @@ const Navbar = () => {
                     </div>
                 </div>
 
-                {/* Menu */}
+                {/* Menu  Mobile*/}
                 <Transition show={isOpen}
                     enter="transition ease-out duration-100 transform"
                     enterFrom="opacity-0 scale-95"
@@ -197,8 +167,8 @@ const Navbar = () => {
                 </Transition>
 
 
-            </nav >
-        </div >
+            </nav>
+        </div>
     )
 }
 

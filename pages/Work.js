@@ -53,8 +53,8 @@ const Works = () => {
                         </div>
                     </Link>
                 </div>
-            </Element >
-        </div >
+            </Element>
+        </div>
     )
 }
 
