@@ -168,6 +168,9 @@ const Navbar = () => {
 
 
             </nav>
+            <div onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')} className="z-50 block md:hidden cursor-pointer fixed bottom-2 p-2 rounded-tr-full rounded-br-full dark:bg-yellow-200 bg-green-200">
+                {theme === 'dark' ? <ImSun className='font-semibold text-2xl mr-1 text-black' /> : <FaRegMoon className='font-semibold text-2xl mr-1' />}
+            </div>
         </div>
     )
 }
