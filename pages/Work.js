@@ -7,6 +7,7 @@ import image1 from '../public/images/project1.png'
 import image2 from '../public/images/project2.png'
 import image3 from '../public/images/project3.png'
 import image4 from '../public/images/project4.png'
+import image5 from '../public/images/project5.png'
 
 const Works = () => {
     return (
@@ -42,9 +43,9 @@ const Works = () => {
                             <Image src={image4} alt='hero-image' layout='fill' objectFit='cover' className=' cursor-pointer  md:block' />
                         </div>
                     </Link>
-                    <Link href="/images/project2.png" target={'_blank'} >
+                    <Link href="https://ayush-bulbule.github.io/My-Portfolio/" target={'_blank'} >
                         <div className=" md:h-38 shadow-xl overflow-hidden rounded-md relative  md:block w-full  h-48">
-                            <Image src={image2} alt='hero-image' layout='fill' objectFit='cover' className=' cursor-pointer  md:block' />
+                            <Image src={image5} alt='hero-image' layout='fill' objectFit='cover' className=' cursor-pointer  md:block' />
                         </div>
                     </Link>
                     <Link href="/images/project2.png" target={'_blank'} >
