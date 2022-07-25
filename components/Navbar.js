@@ -99,10 +99,10 @@ const Navbar = () => {
                 >
                     {
                         (ref) => (
-                            <div className="md:hidden" id="mobile-menu">
+                            <div className="md:hidden " id="mobile-menu">
                                 <div
                                     ref={ref}
-                                    className="bg-white mx-4 pt-4 pb-4 space-y-1"
+                                    className="bg-white dark:bg-neutral-900 dark:text-white mx-4 pt-4 pb-4 space-y-1"
                                 >
 
                                     <Link
@@ -112,7 +112,7 @@ const Navbar = () => {
                                         smooth={true}
                                         offset={50}
                                         duration={500}
-                                        className="cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                                        className="cursor-pointer hover:bg-blue-600 text-black dark:text-gray-200 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                                     >
                                         About
                                     </Link>
@@ -123,7 +123,7 @@ const Navbar = () => {
                                         smooth={true}
                                         offset={50}
                                         duration={500}
-                                        className="cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                                        className="cursor-pointer hover:bg-blue-600 text-black dark:text-gray-200 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                                     >
                                         Skills
                                     </Link>
@@ -135,7 +135,7 @@ const Navbar = () => {
                                         smooth={true}
                                         offset={50}
                                         duration={500}
-                                        className="cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                                        className="cursor-pointer hover:bg-blue-600 text-black dark:text-gray-200 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                                     >
                                         Projects
                                     </Link>
@@ -146,7 +146,7 @@ const Navbar = () => {
                                         smooth={true}
                                         offset={50}
                                         duration={500}
-                                        className="cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                                        className="cursor-pointer hover:bg-blue-600 text-black dark:text-gray-200 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                                     >
                                         Contact
                                     </Link>
@@ -155,7 +155,7 @@ const Navbar = () => {
                                         smooth={true}
                                         offset={50}
                                         duration={500}
-                                        className="cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                                        className="cursor-pointer hover:bg-blue-600 text-black dark:text-gray-200 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                                     >
                                         Say hi👋
                                     </a>
@@ -168,7 +168,7 @@ const Navbar = () => {
 
 
             </nav>
-            <div onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')} className="z-50 block md:hidden cursor-pointer fixed bottom-2 p-2 rounded-tr-full rounded-br-full dark:bg-yellow-200 bg-green-200">
+            <div onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')} className="z-50 block md:hidden select-none cursor-pointer fixed bottom-2 p-2 rounded-tr-full rounded-br-full dark:bg-yellow-200 bg-green-200">
                 {theme === 'dark' ? <ImSun className='font-semibold text-2xl mr-1 text-black' /> : <FaRegMoon className='font-semibold text-2xl mr-1' />}
             </div>
         </div>
