@@ -16,7 +16,9 @@ const About = () => {
                         <p className="mt-2 text-md text-justify">Hii there👋.</p>
                         <p className="mt-2 text-md text-justify">I’m Ayush, a student, developer - web-developer for the most part. I make beautiful Websites and Apps with the new techs. I like to explore new techs in the world of programming. I try to build new things and bring my ideas to reality.
                         </p>
-                        <p className="mt-2 text-md text-justify">I was born in a small-town named Akola in the state of Maharashtra and completed my schooling from Hindu Dyanpeeth Convent from same town. Then I persued Diploma in Computer Engineering from Government Polytechnic, Amravati. Currently persuing my bachelor's degree in computer engineering from Pune Institude of Computer Technology.
+                        <p className="mt-2 text-md text-justify">I was born in a small-town named Akola in the state of Maharashtra and completed my schooling from Hindu Dyanpeeth Convent 
+                        from same town. Then I persued Diploma in Computer Engineering from Government Polytechnic, Amravati. Currently persuing my BE in computer 
+                        engineering from Pune Institute of Computer Technology.
                         </p>
                         <p className="mt-2 text-md text-justify">You can connect me on socials, I would love to hear from you!</p>
                         <div className="flex items-center my-3 gap-10">
