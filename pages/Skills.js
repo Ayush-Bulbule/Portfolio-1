@@ -8,8 +8,8 @@ const Skills = () => {
         <div>
             {/* <Navbar /> */}
             <Element name='skills' id='skils' className="my-8 flex items-center md:mx-40 mx-8 justify-center flex-col">
-                <p className="text-sm text-gray-400 uppercase text-center">Skills</p>
-                <h2 className="text-4xl text-blue-600 font-bold text-center mt-5">My Skills</h2>
+                <p className="text-sm text-gray-400 uppercase text-center mt-20">Skills</p>
+                <h2 className="text-4xl text-blue-600 font-bold text-center pt-8">My Skills</h2>
                 <div className="flex flex-col mt-5 items-center justify-center">
                     {/* Row 1 */}
                     <div className="flex items-center justify-items-center md:mx-40 flex-col md:flex-row mx-12 p-2">

@@ -9,14 +9,14 @@ const About = () => {
         <div>
             {/* <Navbar /> */}
             <Element name='about' id='about' className="py-8 flex items-center md:mx-40 mx-8 justify-center flex-col">
-                <p className="text-sm text-gray-400 uppercase text-center">About</p>
-                <h2 className="text-4xl text-blue-600 font-bold text-center mt-5">About Me</h2>
+                <p className="text-sm text-gray-400 uppercase text-center mt-20">About</p>
+                <h2 className="text-4xl text-blue-600 font-bold text-center pt-8">About Me</h2>
                 <div className="flex items-center justify-center">
                     <div className='mt-5 md:w-4/5 '>
                         <p className="mt-2 text-md text-justify">Hii there👋.</p>
                         <p className="mt-2 text-md text-justify">I’m Ayush, a student, developer - web-developer for the most part. I make beautiful Websites and Apps with the new techs. I like to explore new techs in the world of programming. I try to build new things and bring my ideas to reality.
                         </p>
-                        <p className="mt-2 text-md text-justify">I was born in a small-town named Akola in the state of Maharashtra and completed my schooling from Hindu Dyanpeeth Convent from same town. Then I persued Diploma in Computer Engineering from Government Polytechnic, Amravati. Now waiting to get into new college for my degree😅.
+                        <p className="mt-2 text-md text-justify">I was born in a small-town named Akola in the state of Maharashtra and completed my schooling from Hindu Dyanpeeth Convent from same town. Then I persued Diploma in Computer Engineering from Government Polytechnic, Amravati. Currently persuing my bachelor's degree in computer engineering from Pune Institude of Computer Technology.
                         </p>
                         <p className="mt-2 text-md text-justify">You can connect me on socials, I would love to hear from you!</p>
                         <div className="flex items-center my-3 gap-10">

@@ -14,7 +14,7 @@ const Works = () => {
         <div>
             {/* <Navbar /> */}
             <Element name='works' id='works' className="my-8 cursor-pointer flex items-center pt-8 md:mx-40 mx-8 justify-center flex-col">
-                <p className="text-sm text-gray-400 uppercase text-center">Projects</p>
+                <p className="text-sm text-gray-400 uppercase text-center mt-20">Projects</p>
                 <h2 className="text-4xl text-blue-600 font-bold text-center mt-5">My Workings</h2>
 
                 {/* Project Galery */}

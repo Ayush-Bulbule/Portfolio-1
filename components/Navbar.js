@@ -12,6 +12,14 @@ const Navbar = () => {
 
     // Theme
     const { theme, setTheme } = useTheme()
+    useEffect(() => {
+      
+    
+      return () => {
+        setTheme('light');
+      }
+    }, [])
+    
 
     return (
         <div>

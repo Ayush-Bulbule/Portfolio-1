@@ -11,10 +11,10 @@ const Contact = () => {
         <div>
             {/* <Navbar /> */}
             <Element name='contact' id='contact' className="my-8 flex items-center md:px-12 lg:px-16 xl:px-32 py-16 pt-8 md:mx-40 mx-8 justify-center flex-col">
-                <p className="text-sm text-gray-400 uppercase text-center">Contact</p>
+                <p className="text-sm text-gray-400 uppercase text-center pt-20">Contact</p>
                 <h2 className="text-4xl text-blue-600 font-bold text-center mt-5">Contact Me</h2>
                 <div
-                    className="max-w-screen-xl mt-24 md:px-8 grid gap-8 grid-cols-1 md:grid-cols-2  text-gray-900">
+                    className="max-w-screen-xl mt-16 md:px-8 grid gap-8 grid-cols-1 md:grid-cols-2  text-gray-900">
                     <div className="flex flex-col justify-between">
                         <div>
                             <h2 className="text-4xl lg:text-5xl font-bold dark:text-gray-200 leading-tight">Lets talk about everything!</h2>
