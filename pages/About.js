@@ -26,7 +26,7 @@ const About = () => {
                                 <FaInstagram className='text-2xl text-black-700 cursor-pointer hover:text-pink-600 opacity-70 ' />
                             </Link>
                             <Link
-                                href='instagram.com/ayush_2413'
+                                href='https://twitter.com/ayush_bulbule'
                                 className='cursor-pointer'>
                                 <FaTwitter className='text-2xl text-black-700 cursor-pointer hover:text-sky-500 opacity-70 ' />
                             </Link>
