@@ -14,7 +14,11 @@ const Hero = () => {
                 <p className='my-5 font-semibold text-gray-600 dark:text-gray-200'>📍Akola, Maharashtra</p>
                 <Link to='about' href='/about' smooth={true}
                     offset={50}
-                    duration={1000} className="h-12  items-center px-8 mt-7 inline-flex bg-blue-700 rounded-full text-white font-semibold">See my portfolio!</Link>
+                    duration={1000} className="h-12  items-center px-8 mt-7 inline-flex bg-blue-700 rounded-full text-white font-semibold hover:shadow-sm shadow-blue-300">See my portfolio!</Link>
+                <a target='_blank' href='/resume.pdf' smooth={true}
+                    offset={50}
+                    duration={1000} className="h-12 ml-4 items-center px-8 mt-7 inline-flex bg-transparent border-2 border-blue-700  rounded-full text-black dark:text-white font-semibold">Download CV</a>
+
             </div>
             {/* Block 2: Image */}
             <div className=" items-center mb-12 hidden md:flex -z-50 justify-end md:py-16 md:w-3/4">

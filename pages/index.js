@@ -15,12 +15,16 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Ayush Bulbule</title>
-        <meta name="description" content="Add a shopping cart to your site in minutes. Works with any site builder, CMS, and framework. 20 000+ merchants trust our e-commerce solution for their website. Join them!" />
-        <meta property="og:title" content="Hey! I am Ayush Bulbule - a student,tech enthusiast and web developer for most part." />
-        <meta property="og:description" content="Hi! I am Ayush. I develop websites and apps. See my portfolio! I can develop beautiful website and apps for you which will help you to grow more. For more details ping me!" />
-        <meta property="og:url" content="https://ayushbulbule.vercel.app/" />
+        <title>Ayush Bulbule - Web Developer and Tech Enthusiast</title>
+        <meta name="description" content="Looking for a skilled web developer? Check out Ayush Bulbule's portfolio! Get beautiful, responsive websites and apps for your business today. Contact Ayush for more information." />
+        <meta property="og:title" content="Ayush Bulbule - Web Developer and Tech Enthusiast" />
+        <meta property="og:description" content="Looking for a skilled web developer? Check out Ayush Bulbule's portfolio! Get beautiful, responsive websites and apps for your business today. Contact Ayush for more information." />
         <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://ayushbulbule.vercel.app/" />
+        <meta property="og:image" content="https://ayushbulbule.vercel.app/assets/img/ayush-bulbule.jpg" />
+        <meta property="og:image:type" content="image/jpeg" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630"></meta>
       </Head>
       <Navbar />
 
