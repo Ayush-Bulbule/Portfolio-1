@@ -39,14 +39,15 @@ const Navbar = () => {
                                     <Link
                                         href='/about'
                                         action='about'
-                                        to='about' smooth={true}
+                                        to='about'
+                                        smooth="true"
                                         offset={50} duration={500}
                                         className='text-md hover:text-blue-500 px-3 py-2 cursor-pointer'>About</Link>
                                     <Link
                                         href="/skills"
                                         activeClass="skills"
                                         to="skills"
-                                        smooth={true}
+                                        smooth="true"
                                         offset={50}
                                         duration={500}
                                         className='text-md hover:text-blue-500 px-3 py-2 cursor-pointer'>Skills</Link>
@@ -54,14 +55,14 @@ const Navbar = () => {
                                         href='/works'
                                         action='works'
                                         to='works'
-                                        smooth={true}
+                                        smooth="true"
                                         offset={50}
                                         duration={500} className='text-md hover:text-blue-500 px-3 py-2 cursor-pointer'>Projects</Link>
                                     <Link
                                         href="/contact"
                                         activeClass="contact"
                                         to="contact"
-                                        smooth={true}
+                                        smooth="true"
                                         offset={50}
                                         duration={500} className='text-md hover:text-blue-500 px-3 py-2 cursor-pointer'>Contact</Link>
                                 </div>
@@ -117,7 +118,7 @@ const Navbar = () => {
                                         href="/about"
                                         activeClass="about"
                                         to="about"
-                                        smooth={true}
+                                        smooth="true"
                                         offset={50}
                                         duration={500}
                                         className="cursor-pointer hover:bg-blue-600 text-black dark:text-gray-200 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
@@ -128,7 +129,7 @@ const Navbar = () => {
                                         href="/skills"
                                         activeClass="skills"
                                         to="skills"
-                                        smooth={true}
+                                        smooth="true"
                                         offset={50}
                                         duration={500}
                                         className="cursor-pointer hover:bg-blue-600 text-black dark:text-gray-200 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
@@ -140,7 +141,7 @@ const Navbar = () => {
                                         href="/works"
                                         activeClass="works"
                                         to="works"
-                                        smooth={true}
+                                        smooth="true"
                                         offset={50}
                                         duration={500}
                                         className="cursor-pointer hover:bg-blue-600 text-black dark:text-gray-200 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
@@ -151,7 +152,7 @@ const Navbar = () => {
                                         href="/contact"
                                         activeClass="contact"
                                         to="contact"
-                                        smooth={true}
+                                        smooth="true"
                                         offset={50}
                                         duration={500}
                                         className="cursor-pointer hover:bg-blue-600 text-black dark:text-gray-200 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
@@ -160,7 +161,7 @@ const Navbar = () => {
                                     </Link>
                                     <a
                                         href='https://wa.me/918459320663?text=hi'
-                                        smooth={true}
+                                        smooth="true"
                                         offset={50}
                                         duration={500}
                                         className="cursor-pointer hover:bg-blue-600 text-black dark:text-gray-200 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
