@@ -13,13 +13,13 @@ const Navbar = () => {
     // Theme
     const { theme, setTheme } = useTheme()
     useEffect(() => {
-      
-    
-      return () => {
-        setTheme('light');
-      }
+
+
+        return () => {
+            setTheme('light');
+        }
     }, [])
-    
+
 
     return (
         <div>
@@ -110,7 +110,7 @@ const Navbar = () => {
                             <div className="md:hidden " id="mobile-menu">
                                 <div
                                     ref={ref}
-                                    className="bg-white dark:bg-neutral-900 dark:text-white mx-4 pt-4 pb-4 space-y-1"
+                                    className=" dark:text-white mx-4 pt-4 pb-4 space-y-1"
                                 >
 
                                     <Link
